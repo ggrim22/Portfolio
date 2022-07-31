@@ -269,6 +269,10 @@ section img#mountains_front {
     border-radius: 5px;
 }
 
+.button{
+    text-align: center;
+}
+
 .send{
     background-color: #fff;
     border: none;
@@ -315,7 +319,7 @@ section img#mountains_front {
     transition: ease-in-out 0.3s;
 }
 
-@media (max-width: 360px){
+@media (max-width: 480px){
     body{
         overflow-x: hidden;
     }
