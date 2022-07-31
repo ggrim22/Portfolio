@@ -376,6 +376,10 @@ section img#mountains_front {
         margin-bottom: 20px;
     }
 
+    .sec .about-text{
+        display: none;
+    }
+
     .section-2{
         grid-template-columns: repeat(2, 1fr);
         padding: 20px;
