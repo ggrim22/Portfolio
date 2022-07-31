@@ -1,0 +1,413 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597de);
+}
+
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    font-size: 1.2rem;
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover , 
+header ul li .active{
+    background: #fff;
+    color: #2b1055;
+}
+
+section{
+    position: relative;
+    width:100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}
+
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#moon{
+    mix-blend-mode: screen;
+}
+
+section img#mountains_front {
+    z-index: 10;
+}
+
+.logo-small{
+    position: relative;
+    margin-top: 50px;
+    z-index: 10000;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+
+#text{
+    right: -350px;
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 5vw;
+    z-index: 9;
+}
+
+#btn{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.4em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.sec h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sec .about-small{
+    display: none;
+}
+
+.sec p{
+    font-size: 1.2em;
+    color: #fff;
+    width: 500px;
+    margin-left: 200px;
+    text-indent: 40px;
+}
+
+.sec .about-text{
+    position: absolute;
+    top: 150px;
+    left: 700px;
+}
+
+.image-container{
+    position: absolute;
+    background: #2b1055;
+    width: 300px;
+    height: 400px;
+    opacity: 0.6;
+}
+
+.section-2{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+    height: 100vh;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.section-2 img{
+    width: 100%;
+    border: 3px #fff solid;
+}
+
+.projects{
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    background: #1c0522;
+}
+
+
+.item img:hover{
+    opacity: 0.5;
+    border-color: #2b1055;
+    transition: ease-in-out 0.4s;
+}
+
+.item a{
+    color: #fff;
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    text-align: center;
+    background: #2b1055;
+    width: 100%;
+}
+
+.btn:hover{
+    opacity: 0.5;
+    transition: ease-out 0.2s;
+}
+
+.sec3{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-form{
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3 h2{
+    margin-bottom: 100px;
+    font-size: 2.3rem;
+    color: #fff;
+}
+
+.contact-form .textbox{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+.contact-form .textbox:first-child{
+    margin-right: 15px;
+}
+
+.contact-form textarea{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+}
+
+.send{
+    background-color: #fff;
+    border: none;
+    width: 80px;
+    height: 40px;
+    font-weight: bold;
+    opacity: 0.9;
+    margin-top: 30px;
+}
+
+.send:hover{
+    color: #fff;
+    background: #7597de;
+    box-shadow: 0 0 10px #7597de, 0 0 30px #7597de, 0 0 50px #7597de;
+    transition: ease-in-out 0.3s;
+}
+
+.contact-icons{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 60px;
+}
+
+.contact-icons div{
+    margin-right: 20px;
+}
+
+.social{
+    position: absolute;
+    color: #fff;
+    left: 0;
+    padding: 20px;
+    width: 50px;
+}
+
+.social div{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.social div:hover{
+    color: #7597de;
+    transition: ease-in-out 0.3s;
+}
+
+@media (max-width: 360px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        padding: 10px 5px;
+    }
+
+    header .logo{
+        display: none;
+    }
+
+    .logo-small{
+        display: block;
+    }
+
+    header ul li{
+        margin-left: 10px;
+        font-size: 1.1rem;
+    }
+
+    .sec{
+       flex-direction: column; 
+       justify-content: center;
+    }
+
+    .sec img{
+        width: 200px;
+    }
+
+    .sec h2{
+        text-align: center;
+    }
+
+    .sec p{
+        font-size: 1em;
+        color: #fff;
+        width: 300px;
+        margin-left: 10px;
+        text-indent: 40px;
+        margin-top: 20px;
+    }
+
+    .image-container{
+        width: 200px;
+        margin-top: -122px;
+        height: 267px;
+    }
+
+    .sec .about-small{
+        white-space: nowrap;
+        font-size: 35px;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .section-2{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    .projects{
+        font-size: 2.5rem;
+    }
+
+    .sec3{
+        padding: 20px;
+    }
+
+    .sec3 h2{
+        margin-bottom: 50px;
+        font-size: 2rem;
+    }
+
+    .contact-icons{
+        color: #fff;
+        font-size: 0.7rem;
+        width: 300px;
+        white-space: nowrap;
+        margin-top: 150px;
+    }
+
+    .social{
+        position: relative;
+        margin-top: -160px;
+    }
+
+    .social div{
+        font-size: 20px;
+    }
+}
+
+a{
+    color: #fff;
+    text-decoration: None;
+}
